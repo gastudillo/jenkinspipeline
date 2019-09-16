@@ -3,5 +3,6 @@
 def isMaster = env.BRANCH_NAME == "master"
 
 stage("Running") {
-    echo 'test'
+
+    echo 'test ' + env.BRANCH_NAME
 }
